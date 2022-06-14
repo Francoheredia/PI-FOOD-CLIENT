@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import s from './LandingPage.module.css';
-import videoLanding from './assets/ultimate.mp4';
+import videoLanding from './assets/eaters-collective-12eHC6FxPyg-unsplash.jpg';
 import { Link } from 'react-router-dom';
 import { nameUser } from '../../redux/actions';
 import { useDispatch } from 'react-redux';
@@ -44,9 +44,7 @@ const LandingPage = () => {
           </Link>
         </div>
 
-        <video className={s.video} autoPlay loop muted>
-          <source src={videoLanding} type="video/mp4" />
-        </video>
+        <img src={videoLanding} alt="" className={s.video} />
       </header>
     </div>
   );
