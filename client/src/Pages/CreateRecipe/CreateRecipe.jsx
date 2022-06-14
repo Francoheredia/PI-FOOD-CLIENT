@@ -166,7 +166,7 @@ const CreateRecipe = () => {
                 name="diets"
                 onChange={handleSelecDiets}
               >
-                <option value="">Seleccionar Dietas</option>
+                <option value="">Select diet</option>
                 {dietsAllCreate?.map((diet, index) => (
                   <option key={index} value={diet.name}>
                     {diet.name}
@@ -198,12 +198,14 @@ const CreateRecipe = () => {
                 className={s.buttondisableTrue}
                 type="submit"
                 disabled={false}
+                value="Create recipe"
               />
             ) : (
               <input
                 className={s.buttondisableFalse}
                 type="submit"
                 disabled={true}
+                value="Create recipe"
               />
             )}
           </form>

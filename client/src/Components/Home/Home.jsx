@@ -49,7 +49,7 @@ const Home = () => {
     if (filterActive && currentRecipes.length === 0) {
       return (
         <h3 className={s.messageError}>
-          {' There are no recipes with those filters '}
+          {' No recipes with filters applied '}
         </h3>
       );
     }
@@ -154,7 +154,7 @@ const Home = () => {
       </div>
       {searchError && (
         <h3 className={s.messageError}>
-          {'No recipe with this name was found'}
+          {'No recipe found with the entered name'}
         </h3>
       )}
       {loading ? (
